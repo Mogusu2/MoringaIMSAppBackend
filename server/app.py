@@ -199,8 +199,9 @@ def get_notifications():
         for note in notifications
     ])
 
-# Run the App
+
+
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()  # Ensure database tables exist
+        db.create_all() 
     app.run(debug=True)
